@@ -1,0 +1,31 @@
+{
+    "name": "nails\/module-tag",
+    "keywords": [],
+    "homepage": "https:\/\/nailsapp.co.uk\/modules\/tag",
+    "description": "This module brings basic, global tagging to a project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "nails\/common": "dev-develop"
+    },
+    "require-dev": {
+        "phpunit\/phpunit": "8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nails\\Tag\\": "src\/"
+        }
+    },
+    "extra": {
+        "nails": {
+            "moduleName": "module-tag",
+            "type": "module",
+            "namespace": "Nails\\Tag\\",
+            "data": {}
+        }
+    },
+    "scripts": {
+        "test": ".\/vendor\/bin\/phpunit"
+    }
+}
