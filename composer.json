@@ -29,8 +29,5 @@
             "namespace": "Nails\\Tag\\",
             "data": {}
         }
-    },
-    "scripts": {
-        "test": ".\/vendor\/bin\/phpunit"
     }
 }
