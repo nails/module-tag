@@ -32,7 +32,7 @@
     {
         "nails":
         {
-            "moduleName": "module-tag",
+            "moduleName": "tag",
             "type": "module",
             "namespace": "Nails\\Tag\\",
             "data":
