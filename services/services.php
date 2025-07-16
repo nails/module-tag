@@ -33,11 +33,11 @@ return [
      * A class which represents an object from the database
      */
     'resources' => [
-        'Tag' => function ($mObj): Resource\Tag {
+        'Tag' => function ($resource, $model): Resource\Tag {
             if (class_exists('\App\Tag\Resource\Tag')) {
-                return new \App\Tag\Resource\Tag($mObj);
+                return new \App\Tag\Resource\Tag($resource, $model);
             } else {
-                return new Resource\Tag($mObj);
+                return new Resource\Tag($resource, $model);
             }
         },
     ],
