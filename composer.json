@@ -1,42 +1,34 @@
 {
     "name": "nails/module-tag",
-    "keywords":
-    [],
+    "keywords": [],
     "homepage": "https://nailsapp.co.uk/modules/tag",
     "description": "This module brings basic, global tagging to a project",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require":
-    {
+    "require": {
+        "php": ">=8.3",
         "nails/common": "dev-feature/pre-new-admin"
     },
-    "require-dev":
-    {
-        "phpunit/phpunit": "9.*",
-        "phpstan/phpstan": "1.*"
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "phpstan/phpstan": "^2.0"
     },
-    "scripts":
-    {
+    "scripts": {
         "test": "./vendor/bin/phpunit",
         "analyse": "./vendor/bin/phpstan analyse -c .phpstan/config.neon"
     },
-    "autoload":
-    {
-        "psr-4":
-        {
+    "autoload": {
+        "psr-4": {
             "Nails\\Tag\\": "src/"
         }
     },
-    "extra":
-    {
-        "nails":
-        {
+    "extra": {
+        "nails": {
             "moduleName": "tag",
             "type": "module",
             "namespace": "Nails\\Tag\\",
-            "data":
-            {}
+            "data": {}
         }
     }
 }
