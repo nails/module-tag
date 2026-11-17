@@ -9,7 +9,7 @@
  * @author     Nails Dev Team
  */
 
-namespace Nails\Admin\Tag;
+namespace Nails\Tag\Admin\Controller;
 
 use Nails\Admin\Controller\DefaultController;
 use Nails\Tag\Constants;
@@ -17,7 +17,7 @@ use Nails\Tag\Constants;
 /**
  * Class Tag
  *
- * @package Nails\Admin\Tag
+ * @package Nails\Tag\Admin\Controller
  */
 class Tag extends DefaultController
 {
